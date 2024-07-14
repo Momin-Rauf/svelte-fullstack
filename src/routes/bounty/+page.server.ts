@@ -23,9 +23,9 @@ export const actions = {
         "smart lock deployed : https://whatsonchain.com/tx/" + deployTx.id
       );
 
-      return { success: true, txid: deployTx.id };
+      return { deployed: true, txid: deployTx.id };
     } catch (error:any) {
-      return { success: false, txid: error.message };
+      return { deployed: false, txid: error.message };
     }
   },
 

@@ -15,8 +15,8 @@
     
     </script>
     
-    <section>
-        <button class=" bg-black text-white p-2 rounded mx-auto" on:click={createKeys}> Generate New Wallet Keys </button>
+    <section class="flex flex-col gap-4 justify-center h-[100vh] items-center bg-slate-200" >
+        <button class=" bg-black text-white p-2 rounded-full mx-auto" on:click={createKeys}> Generate New Wallet Keys </button>
         <p>Private Key WIF format is {WIF}</p>
         <p>Your BitCoin Address is {address}</p>
     </section>
